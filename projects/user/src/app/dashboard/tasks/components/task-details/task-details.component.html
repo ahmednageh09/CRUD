@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="imageBox">
+    <img [src]="'https://crudproj.onrender.com/' + details.image" alt="" class="w-100">
+  </div>
+  <div class="d-flex justify-content-between align-items-baseline my-3">
+      <h1 class="card-title ">{{details.title}}</h1>
+      <button class="btn btn-danger" mat-raised-button color="warn" (click)="complete()"> {{'tasks.complete' | translate}} </button>
+  </div>
+  <p class="card-subtitle mb-2 text-muted">{{details.deadline}}</p>
+  <hr>
+  <p class="card-text">{{details.description}}</p>
+</div>

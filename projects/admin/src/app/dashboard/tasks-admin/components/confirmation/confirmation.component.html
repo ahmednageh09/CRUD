@@ -1,0 +1,12 @@
+<div>
+    <header class="justify-content-center align-items-center m-3 py-2">
+        <h2> {{"general.confirm" | translate}} </h2>
+    </header>
+
+    <footer>
+        <div class="d-flex justify-content-center align-items-center py-3">
+            <button  class="btn btn-success py-1 px-5 mx-2" (click)="confirm()">{{"general.yes" | translate}}</button>
+            <button  class="btn btn-danger py-1 px-5" (click)="close()">{{"general.no" | translate}}</button>
+        </div>
+    </footer>
+</div>

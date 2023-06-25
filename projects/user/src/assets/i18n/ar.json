@@ -1,0 +1,32 @@
+{
+  "tasks":{
+      "complete":"اكتمل",
+      "details":"عرض التفاصيل",
+      "in-progress":"قيد التنفيذ",
+      "search":"بحث",
+      "user":"المستخدم",
+      "status":"الحالة",
+      "date":"فترة زمنية",
+      "title":"الاسم",
+      "deadLine":"اخر موعد",
+      "update":"تحديث",
+      "delete":"حذف",
+      "close":"اغلاق",
+      "description":"وصف"
+  },
+
+  "general":{
+    "logout":"خروج",
+    "users":"المستخدمين",
+    "allTasks":"كل المهام",
+    "confirm":"هل متأكد من القيام بذلك ؟",
+    "yes":"نعم",
+    "no":"لا"
+  },
+
+  "toastr":{
+    "completed":"تم اكمال المهمه بنجاح",
+    "success":"تم",
+    "error":"خطأ"
+  }
+}

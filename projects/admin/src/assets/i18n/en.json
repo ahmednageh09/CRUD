@@ -1,0 +1,48 @@
+{
+    "tasks":{
+        "addTask":"Add Task",
+        "complete":"Complete",
+        "in-progress":"In-Progress",
+        "search":"Search",
+        "user":"User",
+        "status":"Status",
+        "date":"Enter a date range",
+        "title":"Title",
+        "deadLine":"Dead Line",
+        "update":"Update",
+        "delete":"Delete",
+        "close":"Close",
+        "selectImg":"Select Image",
+        "description":"Description",
+        "create":"Create"
+    },
+
+    "users":{
+      "search":"Search",
+      "name":"Name",
+      "email":"Email",
+      "tasks":"Tasks Assigned",
+      "delete":"Delete",
+      "in-active":"In-Active",
+      "active":"Active"
+    },
+
+    "general":{
+        "logout":"Logout",
+        "users":"Users",
+        "allTasks":"All-Tasks",
+        "confirm":"Are you sure about that ?",
+        "yes":"Yes",
+        "no":"No"
+    },
+
+    "toastr":{
+      "addedSuccess":"Task added successfully!",
+      "success":"Success",
+      "error":"Error",
+      "can'tDelete":"This user can't be deleted till finish assigned tasks",
+      "deleted":"User Deleted Successfully !",
+      "updateStatus":"User Status Updated Successfully !",
+      "can'tInactivate":"This user can't be in-activated till finish assigned tasks"
+    }
+}

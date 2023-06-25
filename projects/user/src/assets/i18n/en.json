@@ -1,0 +1,45 @@
+{
+  "tasks":{
+      "addTask":"Add Task",
+      "complete":"Complete",
+      "details":"Show Details",
+      "in-progress":"In-progress",
+      "search":"Search",
+      "user":"User",
+      "status":"Status",
+      "date":"Enter a date range",
+      "title":"Title",
+      "deadLine":"Dead Line",
+      "update":"Update",
+      "delete":"Delete",
+      "close":"Close",
+      "selectImg":"Select Image",
+      "description":"Description",
+      "create":"Create"
+  },
+
+  "users":{
+    "search":"Search",
+    "name":"Name",
+    "email":"Email",
+    "tasks":"Tasks Assigned",
+    "delete":"Delete",
+    "in-active":"In-Active",
+    "active":"Active"
+  },
+
+  "general":{
+      "logout":"Logout",
+      "users":"Users",
+      "allTasks":"All-Tasks",
+      "confirm":"Are you sure about that ?",
+      "yes":"Yes",
+      "no":"No"
+  },
+
+  "toastr":{
+    "completed":"Task completed successfully",
+    "success":"Success",
+    "error":"Error"
+  }
+}
