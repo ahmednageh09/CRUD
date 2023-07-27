@@ -1,29 +1,28 @@
 nav {
-    background-color: #ca085a;
-    .navbar-brand {
-        font-size: 27px;
-        font-weight: bold;
-        color: #e3d510!important;
+  background-color: #ca085a;
+  .navbar-brand {
+      font-size: 27px;
+      font-weight: bold;
+      color: #e3d510!important;
 
-    }
-    a {
-        font-size: 20px;
-        color: #FFF!important;
-        &.active  {
-            background-color: #910340;
-            padding: 10px;
-            color: #FFF;
-            width: 70%;
-        }
-    }
+  }
+  a {
+      font-size: 20px;
+      color: #FFF!important;
+      &.active  {
+          background-color: #910340;
+          padding: 10px;
+          color: #FFF;
+      }
+  }
+  
     .links {
       a{
         display: inline-block;
-        margin-left: 10px;
-        margin-top: 8px;
-        padding: 10px;
-        width: 15%;
-        text-align:center;
+        margin: 6px;
+        padding: 15px;
+        width: 25%;
+        text-align: center;
       }
     }
-  }
+}
