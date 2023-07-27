@@ -1,6 +1,7 @@
 button {
     color: #FFF;
     margin: 5px 5px;
+
     &.addTask {
         background-color: #ca085a;
         color: #FFF;
@@ -8,8 +9,16 @@ button {
         font-size: 20px;
     }
 }
+
+.shadow {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    overflow-x: auto;
+    border-radius: 8px;
+    padding: 5px;
+}
+
 table {
-    img{
+    img {
         padding: 5px;
         width: 70px !important;
         height: 70px !important;
@@ -19,7 +28,8 @@ table {
 :host ::ng-deep {
     table {
         thead {
-            background-color: #bc1059!important;
+            background-color: #bc1059 !important;
+
             .mat-header-cell {
                 color: #FFF;
             }
@@ -28,7 +38,7 @@ table {
 }
 
 .w-20 {
-    width: 20%!important;
+    width: 20% !important;
 }
 
 ::ng-deep {
@@ -36,7 +46,7 @@ table {
         margin-top: 14px;
 
         &.current {
-        background-color: #bc1059;
+            background-color: #bc1059;
+        }
     }
-}
 }

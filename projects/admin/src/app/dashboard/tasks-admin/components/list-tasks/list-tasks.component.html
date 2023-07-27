@@ -46,54 +46,55 @@
                 </div>
         </div>
     </form>
-    <div class="listBox">
-        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8  w-100 mt-2">
+    <div class="listBox table-responsive">
+      <div class="shadow">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-100 mt-2">
 
-            <!-- Position Column -->
-            <ng-container matColumnDef="position">
-              <th mat-header-cell *matHeaderCellDef>  </th>
-              <td mat-cell *matCellDef="let element;let index = index">
-                  <img [src]="'https://crudproj.onrender.com/' + element.image" alt="">
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element;let index = index">
+                <img [src]="'https://crudproj.onrender.com/' + element.image" alt="">
+            </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> {{"tasks.title" | translate}} </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="user">
+            <th mat-header-cell *matHeaderCellDef> {{"tasks.user" | translate}} </th>
+            <td mat-cell *matCellDef="let element"> {{element.user}} </td>
+          </ng-container>
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="deadline">
+              <th mat-header-cell *matHeaderCellDef> {{"tasks.deadLine" | translate}} </th>
+              <td mat-cell *matCellDef="let element"> {{element.deadline}} </td>
+            </ng-container>
+          <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef> {{"tasks.status" | translate}} </th>
+              <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+            </ng-container>
+
+          <ng-container matColumnDef="actions" >
+              <th mat-header-cell *matHeaderCellDef class="w-20">  </th>
+              <td mat-cell *matCellDef="let element">
+                  <button class="btn btn-warning" mat-raised-button (click)="updateTask(element)"> {{"tasks.update" | translate}} </button>
+                  <button  mat-raised-button color="warn" (click)="deleteTask(element._id)">{{"tasks.delete" | translate}}</button>
               </td>
             </ng-container>
 
-            <!-- Name Column -->
-            <ng-container matColumnDef="title">
-              <th mat-header-cell *matHeaderCellDef> {{"tasks.title" | translate}} </th>
-              <td mat-cell *matCellDef="let element"> {{element.title}} </td>
-            </ng-container>
-
-            <!-- Weight Column -->
-            <ng-container matColumnDef="user">
-              <th mat-header-cell *matHeaderCellDef> {{"tasks.user" | translate}} </th>
-              <td mat-cell *matCellDef="let element"> {{element.user}} </td>
-            </ng-container>
-
-            <!-- Symbol Column -->
-            <ng-container matColumnDef="deadline">
-                <th mat-header-cell *matHeaderCellDef> {{"tasks.deadLine" | translate}} </th>
-                <td mat-cell *matCellDef="let element"> {{element.deadline}} </td>
-              </ng-container>
-            <ng-container matColumnDef="status">
-                <th mat-header-cell *matHeaderCellDef> {{"tasks.status" | translate}} </th>
-                <td mat-cell *matCellDef="let element"> {{element.status}} </td>
-              </ng-container>
-
-            <ng-container matColumnDef="actions" >
-                <th mat-header-cell *matHeaderCellDef class="w-20">  </th>
-                <td mat-cell *matCellDef="let element">
-                    <button class="btn btn-warning" mat-raised-button (click)="updateTask(element)"> {{"tasks.update" | translate}} </button>
-                    <button  mat-raised-button color="warn" (click)="deleteTask(element._id)">{{"tasks.delete" | translate}}</button>
-                </td>
-              </ng-container>
-
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns | paginate: { id: 'tasks',
-            itemsPerPage: 5,
-            currentPage: page,
-            totalItems: total }"></tr>
-          </table>
-
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns | paginate: { id: 'tasks',
+          itemsPerPage: 5,
+          currentPage: page,
+          totalItems: total }"></tr>
+        </table>
+      </div>
           <div class="d-flex justify-content-center">
             <pagination-controls (pageChange)="changePage($event)" id="tasks"></pagination-controls>
           </div>

@@ -1,5 +1,13 @@
 :host ::ng-deep {
+.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+
   table {
+    margin-bottom: 10px;
       thead {
           background-color: #bc1059!important;
           .mat-header-cell {
@@ -10,7 +18,7 @@
 }
 
 .w-20 {
-  width: 20%!important;
+  width: 20% !important;
 }
 button {
   margin: 5px;
