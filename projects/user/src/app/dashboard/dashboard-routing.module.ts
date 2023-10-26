@@ -6,7 +6,7 @@ import {userGuard} from '../core/guards/user.guard'
 const routes: Routes = [
   {
     path:'', component:LayoutComponent,
-    canActivateChild:[userGuard],
+    canActivate:[userGuard],
     children: [
       {
         path:'tasks',

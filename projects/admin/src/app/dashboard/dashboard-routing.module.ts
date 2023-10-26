@@ -5,7 +5,7 @@ import { adminGuard } from '../core/guards/admin.guard';
 
 const routes: Routes = [
 {path:'', component:LayoutComponent,
-canActivateChild:[adminGuard],
+canActivate:[adminGuard],
 children: [
   {path:"tasks",
   loadChildren: () => import('./tasks-admin/tasks-admin.module').then(m => m.TasksAdminModule)},

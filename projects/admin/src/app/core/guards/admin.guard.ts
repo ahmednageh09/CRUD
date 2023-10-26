@@ -12,6 +12,7 @@ export const adminGuard = ()=>{
     return true;
   }else {
     router.navigate(['/login'])
+    
     toastr.info("You should login first !", "info")
     return false;
   }
